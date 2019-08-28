@@ -24,7 +24,8 @@ const scriptTemplate = (connectionObj) => `
 
     const ect = getConnectionStatus(browserTime - serverTime);
     window.serverConnection = connections[ect];
-    
+    const connectionEvent = new CustomEvent('siteready');
+    window.dispatchEvent(connectionEvent);
   })();
 </script>
 `;
