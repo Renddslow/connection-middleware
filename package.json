@@ -4,5 +4,9 @@
   "description": "A node HTTP middleware for adding a chunk of JS and a meta tag to determine the connection abilities of the end-user.",
   "main": "index.js",
   "author": "Matt McElwee <mubatt@wyopub.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Renddslow/connection-middleware.git"
+  }
 }
