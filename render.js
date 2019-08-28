@@ -9,7 +9,7 @@ const scriptTemplate = (connectionObj) => `
       return '4g';
   }
   
-  const connections = JSON.parse(${connectionObj});
+  const connections = ${connectionObj};
 
   (function() {
     window.serverConnection = {};
