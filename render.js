@@ -22,7 +22,7 @@ const scriptTemplate = (connectionObj) => `
     const browserTime = new Date().getTime();
     const serverTime = parseInt(serverTimeMeta.content, 10);
 
-    const ect = getConnectionStatus(serverTime - browserTime);
+    const ect = getConnectionStatus(browserTime - serverTime);
     window.serverConnection = connections[ect];
     
   })();
