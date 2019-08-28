@@ -48,7 +48,7 @@ module.exports = function(html, opts = {}) {
 
   const headInner = addToContent(
     headMatch[1],
-    `<meta name="server-connection-time" value="${new Date().getTime()}">`,
+    `<meta name="server-connection-time" content="${new Date().getTime()}">`,
   );
 
   const head = `<head>\n${headInner}\n</head>`;
