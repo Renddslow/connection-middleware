@@ -1,6 +1,6 @@
 {
   "name": "connection-middleware",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A node HTTP middleware for adding a chunk of JS and a meta tag to determine the connection abilities of the end-user.",
   "main": "index.js",
   "author": "Matt McElwee <mubatt@wyopub.com>",
