@@ -9,7 +9,7 @@ const scriptTemplate = (connectionObj) => `
       return '4g';
   }
   
-  const connections = JSON.parse(${JSON.stringify(connectionObj)});
+  const connections = JSON.parse(${connectionObj});
 
   (function() {
     window.serverConnection = {};
@@ -59,7 +59,7 @@ module.exports = function(html, opts = {}) {
   }
 
   const connectionObj = getConnectionSettings(opts);
-  const bodyInner = addToContent(bodyMatch[1], scriptTemplate(connectionObj));
+  const bodyInner = addToContent(bodyMatch[1], scriptTemplate(JSON.stringify(connectionObj)));
 
   const body = `<body>\n${bodyInner}\n</body>`;
   return replacedHead.replace(bodyRegexpr, body);
