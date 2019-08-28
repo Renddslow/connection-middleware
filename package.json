@@ -6,7 +6,7 @@
   "author": "Matt McElwee <mubatt@wyopub.com>",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Renddslow/connection-middleware.git"
+    "type": "git",
+    "url": "https://github.com/Renddslow/connection-middleware.git"
   }
 }
